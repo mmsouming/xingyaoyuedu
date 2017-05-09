@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="252px">
+
+
+
+    <CheckBox
+
+        android:id="@+id/iv_interbook_check"
+        style="@style/MyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16px"
+        android:checked="false" />
+
+    <ImageView
+        android:id="@+id/iv_interbook_img"
+        android:layout_width="148px"
+        android:layout_height="198px"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="36px"
+        android:layout_marginRight="30px"
+        android:layout_toRightOf="@id/iv_interbook_check"
+        android:background="@drawable/aaaaaaaaaaaaaa" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/iv_interbook_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/iv_interbook_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_book_name"
+            android:layout_marginTop="20px"
+
+
+            android:text="鸭子骑行记"
+            android:textColor="@color/gray_3"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px">
+
+            <TextView
+                android:id="@+id/iv_interbook_zhuanjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:gravity="center_vertical"
+                android:text="专家推荐:"
+                android:textColor="@color/font_color_black"
+                android:textSize="28px" />
+
+            <RatingBar
+                android:id="@+id/rb_star"
+                style="@style/articlelist_item_ratingbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_interbook_zhuanjia"
+                android:isIndicator="true"
+                android:rating="2.5" />
+                 />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_interbook_descri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="52px"
+            android:layout_marginTop="34px"
+            android:lineSpacingExtra="14px"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="鸭子骑车？这可真是个疯狂的想法！但只有一只鸭子真的办到了"
+            android:textColor="@color/font_color_black"
+            android:textSize="28px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

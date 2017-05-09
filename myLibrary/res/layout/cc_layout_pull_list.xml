@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tb"
+    android:background="@drawable/radiu_white_bg">
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srl_direction="both">
+
+        <ListView
+            android:id="@+id/lv_pull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/line_heng"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/white"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:scrollbars="none" />
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+</RelativeLayout>
+

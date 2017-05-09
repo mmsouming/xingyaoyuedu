@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20px"
+    android:paddingLeft="40px"
+    android:paddingRight="40px"
+    android:paddingTop="40px">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_header"
+        android:layout_width="78px"
+        android:layout_height="78px"
+        android:layout_marginRight="16px"
+        android:src="@drawable/defaul_head" />
+
+    <TextView
+        android:id="@+id/tv_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="小星"
+        android:textColor="@color/gray_3"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nick_name"
+        android:layout_marginTop="12px"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="星耀小学 三年级1班"
+        android:textColor="@color/gray_1"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_from"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="他开始骑的很慢，而且左摇右晃，但觉得很好玩"
+        android:textColor="@color/gray_3"
+        android:textSize="30px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_comment"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/iv_header"
+        android:background="@drawable/img_task_detail_frame"
+        android:padding="20px">
+
+        <TextView
+            android:id="@+id/tv_parents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:text="羽凡的妈妈："
+            android:textColor="@color/bule_1"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_parents_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:layout_toRightOf="@id/tv_parents"
+            android:text="孩子的读后感，分享了"
+            android:lines="1"
+            android:textColor="@color/gray_3"
+            android:textSize="30px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_parents"
+            android:layout_marginTop="22px"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_book"
+                android:layout_width="130px"
+                android:layout_height="146px"
+                android:layout_marginRight="20px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cc_book_no" />
+
+            <TextView
+                android:id="@+id/tv_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18px"
+                android:layout_toRightOf="@id/iv_book"
+                android:lines="1"
+                android:text="鸭子骑车记"
+                android:textColor="@color/gray_3"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_book"
+                android:layout_marginTop="14px"
+                android:layout_toRightOf="@id/iv_book"
+                android:lines="2"
+                android:text="鸭子骑车?这可正式个疯狂的想法！但是有一只鸭子真的办到了！农...................鸭子骑车真是一个疯狂"
+                android:textColor="@color/gray_2"
+                android:textSize="26px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_target"
+        android:layout_marginTop="26px"
+        android:layout_toRightOf="@id/iv_header"
+        android:text="2016-12-01  18:20"
+        android:textColor="@color/gray_1"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_arm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_target"
+        android:layout_marginTop="28px"
+        android:text="举报"
+        android:layout_marginRight="22px"
+        android:textColor="@color/gray_2"
+        android:textSize="24px" />
+</RelativeLayout>

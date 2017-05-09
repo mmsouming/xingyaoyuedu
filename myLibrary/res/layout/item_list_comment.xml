@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/book_item_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/defaul_head" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/comment_nike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="白雪公主"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/comment_school"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="#C7C7C7"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/comment_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="太好了，五颗星，宝宝非常喜欢太好了，五颗星，宝宝非常喜欢太好了，五颗星，宝宝非常喜欢太好了，五颗星，宝宝非常喜欢"
+            android:textColor="@color/ff_font_dark_gray"
+            android:textSize="15.0sp" />
+
+        <!--<com.fancyfamily.primarylibrary.commentlibrary.widget.MeasureGridView-->
+            <!--android:id="@+id/grid_pic_pic"-->
+            <!--android:layout_width="240dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:gravity="fill"-->
+            <!--android:horizontalSpacing="5dp"-->
+            <!--android:listSelector="@color/transparent"-->
+            <!--android:numColumns="3"-->
+            <!--android:scrollbars="none"-->
+            <!--android:stretchMode="columnWidth"-->
+            <!--android:verticalSpacing="5dp" />-->
+
+        <com.lzy.ninegrid.NineGridView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nineGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:ngv_gridSpacing="3dp"
+            app:ngv_maxSize="9"
+            app:ngv_singleImageSize="160dp"
+            app:ngv_mode="fill" />
+
+        <LinearLayout
+            android:id="@+id/reply_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/replybg"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.fancyfamily.primarylibrary.commentlibrary.widget.MeasureListView
+                android:id="@+id/reply_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/reply_more"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="查看更多回复"
+                android:textColor="#949A9A"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="2015-04-05"
+            android:textColor="#C7C7C7"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:id="@+id/reply_zan"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/reply_reply"
+            android:background="@drawable/zan"
+            style="?android:attr/borderlessButtonStyle"
+            android:gravity="center"
+            android:textColor="#c7c7c7" />
+
+        <Button
+            android:id="@+id/reply_reply"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/huifu"
+            android:gravity="center"
+            android:textColor="#c7c7c7" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        layout="@layout/line" />
+
+</LinearLayout>

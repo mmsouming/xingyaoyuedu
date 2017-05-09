@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="132px"
+        android:background="@drawable/radiu_white_bg"
+        android:paddingBottom="32px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="32px">
+
+        <ImageView
+            android:id="@+id/img_mate_head"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:src="@drawable/defaul_head" />
+
+        <TextView
+            android:id="@+id/tv_mate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:layout_toLeftOf="@+id/tv_identification"
+            android:layout_toRightOf="@+id/img_mate_head"
+            android:text="周生生"
+            android:textColor="@color/gray_3"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42px"
+            android:text="未提交"
+            android:textColor="@color/gray_2"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38px"
+        android:layout_marginRight="38px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

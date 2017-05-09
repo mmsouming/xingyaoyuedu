@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/darker_blue1"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="春天主题阅读"
+        android:textColor="@color/login_bg"
+        android:textSize="40px"
+        android:layout_marginTop="66px"
+        />
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:text="结束时间：3月22日 12:00"
+        android:textColor="@color/login_bg"
+        android:textSize="32px"
+        />
+
+    <Button
+        android:id="@+id/btn_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_task"
+        android:layout_marginTop="40px"
+        android:textSize="36px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:textColor="@color/login_bg"
+        android:background="@drawable/btn_yellow_commit"
+        />
+</LinearLayout>

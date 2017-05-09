@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_yellow_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fancyfamily.primarylibrary.commentlibrary.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:padding="26px"
+            app:title_left_icon_src="@drawable/cc_white_return"
+            app:title_right_text=""
+            app:title_right_visible="true"
+            app:title_text_color="@color/gray_text"
+            app:title_text="学会分享阅读作业" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8px"
+            android:background="@drawable/btn_blue_circle"
+            android:paddingLeft="8px"
+            android:paddingRight="8px"
+            android:text="@string/detail"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/ll_scontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:background="@drawable/radiu_top_bg"
+            android:padding="26px">
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="读后感"
+                    android:textColor="@color/login_bg"
+                    android:textSize="32px" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="310px">
+
+                    <ImageView
+                        android:id="@+id/iv_contents"
+                        android:layout_width="match_parent"
+                        android:layout_height="270px"
+                        android:layout_marginTop="30px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_homework_default" />
+
+                    <ImageView
+                        android:id="@+id/iv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/cc_mark_a" />
+
+                    <TextView
+                        android:id="@+id/tv_pic_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginBottom="18px"
+                        android:layout_marginRight="18px"
+                        android:background="@drawable/tv_gray_transp"
+                        android:paddingBottom="6px"
+                        android:paddingLeft="28px"
+                        android:paddingRight="28px"
+                        android:paddingTop="6px"
+                        android:text="3"
+                        android:textColor="@color/white" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_book_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="可用高度。"
+                    android:textColor="@color/gray_text"
+                    android:textSize="30px" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_book_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="157px"
+                    android:layout_marginTop="28px"
+                    android:background="@drawable/img_task_detail_frame"
+                    android:padding="16px">
+
+                    <ImageView
+                        android:id="@+id/iv_book"
+                        android:layout_width="112px"
+                        android:layout_height="113px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="12px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cc_book_no" />
+
+                    <TextView
+                        android:id="@+id/tv_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12px"
+                        android:layout_toRightOf="@id/iv_book"
+                        android:text="鸭子骑车记"
+                        android:textSize="30px"
+                        android:textColor="@color/gray_text"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_book"
+                        android:layout_marginTop="14px"
+                        android:layout_toRightOf="@id/iv_book"
+                        android:lines="2"
+                        android:text="鸭子骑车?这可正式个疯狂的想法！但是有一只鸭子真的办到了！农...................鸭子骑车真是一个疯狂"
+                        android:textColor="@color/gray_1"
+                        android:textSize="26px" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_teacher_comment"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_teacher_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38px"
+                        android:text="老师点评"
+                        android:textColor="@color/login_bg"
+                        android:textSize="32px" />
+
+
+                    <TextView
+                        android:id="@+id/tv_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26px"
+                        android:lineSpacingMultiplier="1.5"
+                        android:maxLines="3"
+                        android:text="如果某个Activity需要将状态栏区域作为实际的内容区域时，那么可用高度会变大，你所要做的只有一件事：让这个Activity实现UseStatusBar接口(仅仅作为标识左右，不需要实现任何方法)，当然你肯定要自己开启windowTranslucentStatus或者设置FLAG_TRANSLUCENT_STATUS。  注意：仅仅是改变状态栏颜色，并不需要实现此接口，因为并没有实际上增加可用高度。"
+                        android:textColor="@color/gray_text"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="94px"
+                    android:text="等待老师点评中..."
+                    android:textColor="@color/login_bg"
+                    android:textSize="36px" />
+
+                <Button
+                    android:id="@+id/btn_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="168px"
+                    android:layout_marginRight="168px"
+                    android:layout_marginTop="88px"
+                    android:background="@drawable/btn_blue_circle"
+                    android:textSize="36px"
+                    android:text="@string/share_read_feel"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

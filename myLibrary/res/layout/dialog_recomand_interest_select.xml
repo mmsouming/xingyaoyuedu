@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/radiu_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <ListView
+            android:id="@+id/lvs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/white"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="300px"
+            android:layout_height="90px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/btn_login_circle_selector"
+            android:gravity="center"
+            android:text="@string/sure"
+            android:textColor="@android:color/white"
+            android:textSize="36px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

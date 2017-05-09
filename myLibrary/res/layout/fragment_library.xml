@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_yellow_bg"
+    android:orientation="vertical"
+    android:paddingLeft="18px"
+    android:paddingRight="18px"
+    android:paddingTop="18px"
+    tools:context="com.fancyfamily.primarylibrary.commentlibrary.ui.book.fragment.LibraryFragment">
+
+    <RadioGroup
+        android:id="@+id/rg_sort"
+        android:layout_width="162dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_recomand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_btn_recommand_selector"
+
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/recomand"
+            android:textColor="@drawable/rb_recomand_txt_selector"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rb_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_btn_sort_selector"
+
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/sort"
+            android:textColor="@drawable/rb_recomand_txt_selector"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="26px" />
+</LinearLayout>

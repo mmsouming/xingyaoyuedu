@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_subject"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_subject_chinesse"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="match_parent"
+        android:layout_height="86px"
+        android:textColor="@color/bule_1"
+        android:gravity="center"
+        android:text="人文百科"
+        android:background="@drawable/btn_traspbg_yellow_circle"
+        />
+</com.zhy.autolayout.AutoLinearLayout>

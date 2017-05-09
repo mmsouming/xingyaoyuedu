@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="684px">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/radiu_bg"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+
+        android:paddingTop="50px"
+        android:layout_height="wrap_content">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relative_select">
+
+   <ImageButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toLeftOf="@+id/btn_class"
+       android:layout_marginRight="36px"
+       android:id="@+id/btn_class_left"
+       android:background="@drawable/left"
+       android:layout_centerVertical="true"
+       />
+        <Button
+            android:id="@+id/btn_class"
+            android:layout_width="336px"
+            android:layout_height="74px"
+
+            android:layout_marginTop="46px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="一年級"
+            android:textSize="36px"
+            android:padding="0px"
+            android:textColor="@drawable/rb_recomand_txt_selector"
+            android:background="@drawable/cb_recomand_subject_selector"
+            style="@style/btn_common_nomargin"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_class"
+            android:layout_marginLeft="36px"
+            android:id="@+id/btn_class_right"
+            android:background="@drawable/right"
+            android:layout_marginBottom="@dimen/padding_content"
+            android:layout_centerVertical="true"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <GridView
+        android:id="@+id/gv_class_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52px"
+        android:numColumns="3"
+        android:dividerHeight="0px"
+        android:horizontalSpacing="36px"
+        android:verticalSpacing="26px"
+        android:divider="@null"
+        android:layout_below="@+id/relative_select"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_select_sure"
+
+        android:layout_width="288px"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40px"
+
+
+        android:layout_marginBottom="42px"
+        android:text="@string/sure"
+        android:textSize="36px"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_login_circle_selector"
+        style="@style/btn_common_nomargin"
+        />
+        </LinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

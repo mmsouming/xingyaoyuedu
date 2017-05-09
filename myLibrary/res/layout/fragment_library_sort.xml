@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:textColor="@color/gray_text"
+            android:drawableLeft="@drawable/img_library_search_ico"
+            android:background="@drawable/radiu_coner_blue_bg"
+            android:padding="16px"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            />
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/img_library_sort_code_ico"
+            android:layout_marginLeft="12px"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="28px"
+        android:orientation="vertical"
+        android:paddingTop="18px" >
+        <ListView
+            android:id="@+id/lvs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/white"
+            android:divider="@null"
+
+            />
+    </LinearLayout>
+</LinearLayout>

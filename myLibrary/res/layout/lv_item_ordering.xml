@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_book_ico"
+        android:layout_width="218px"
+        android:layout_height="290px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="4px"
+        android:src="@drawable/cc_book_no" />
+
+    <TextView
+        android:id="@+id/tv_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="40px"
+        android:lines="3"
+        android:layout_toRightOf="@id/iv_book_ico"
+        android:text="鸭子学车记"
+        android:textColor="@color/gray_3"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_ordering_cancel"
+        android:layout_toRightOf="@id/iv_book_ico"
+        android:drawableLeft="@drawable/img_order_time"
+        android:drawablePadding="6px"
+        android:lines="1"
+        android:gravity="center_vertical"
+        android:text="@string/recomand_me_title"
+        android:textColor="@color/login_bg"
+        android:textSize="30px" />
+
+    <Button
+        android:id="@+id/btn_ordering_cancel"
+        android:layout_width="188px"
+        android:layout_height="68px"
+        android:layout_alignBottom="@+id/iv_book_ico"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="27px"
+        android:layout_toRightOf="@id/iv_book_ico"
+        android:background="@drawable/btn_blue_commit"
+        android:text="@string/ordering_cancel"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_ordering"
+        android:layout_width="188px"
+        android:layout_height="68px"
+        android:layout_alignBottom="@+id/iv_book_ico"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="27px"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@id/btn_ordering_cancel"
+        android:background="@drawable/btn_yellow_commit"
+        android:text="@string/ordering_cancel"
+        android:layout_marginRight="2px"
+        android:textColor="@color/white" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

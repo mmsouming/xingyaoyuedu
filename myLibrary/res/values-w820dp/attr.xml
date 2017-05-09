@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleBar" >
+        <attr name="title_left_visible" format="boolean" />
+        <attr name="title_left_icon_visible" format="boolean" />
+        <attr name="title_right_visible" format="boolean" />
+        <attr name="title_left_text" format="string" />
+        <attr name="title_text" format="string" />
+        <attr name="title_text_size" format="integer" />
+        <attr name="title_right_text" format="string" />
+        <attr name="title_right_text_color" format="color" />
+        <attr name="title_left_icon_src"  format="integer" />
+        <attr name="title_right_icon_src" format="integer" />
+        <attr name="title_text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadTipLayout" >
+        <attr name="tip_loadding_src" format="integer" />
+        <attr name="tip_loadding_text" format="string" />
+        <attr name="tip_exception_src" format="integer" />
+        <attr name="tip_exception_text" format="string" />
+        <attr name="tip_exception_click_text" format="string"/>
+        <attr name="tip_exception_click_color" format="color" />
+        <attr name="tip_text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+
+</resources>

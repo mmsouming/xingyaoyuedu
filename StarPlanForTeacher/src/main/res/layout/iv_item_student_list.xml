@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="118px"
+        android:layout_gravity="center_vertical">
+
+        <CheckBox
+
+            android:id="@+id/imbtn_check"
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:checked="false" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_student_header"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:layout_toRightOf="@+id/imbtn_check"
+            android:src="@drawable/defaul_head" />
+
+
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:layout_toRightOf="@+id/iv_student_header"
+            android:text="黄小星"
+            android:textColor="@color/gray_3"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_renzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+           android:layout_marginRight="200px"
+
+
+            android:textColor="@color/gray_2"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_renzheng_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+          android:layout_alignParentRight="true"
+
+            android:text="12"
+            android:layout_marginRight="100px"
+            android:textColor="@color/tv_renzheng_number"
+            android:textSize="28px" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

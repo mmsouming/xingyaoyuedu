@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="24px"
+
+    >
+
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_marginTop="24px"
+        android:src="@drawable/cc_book_no"
+        android:layout_marginRight="30px"
+        android:layout_width="182px"
+        android:layout_height="242px" />
+
+    <TextView
+        android:id="@+id/tv_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:layout_toRightOf="@id/iv_book"
+        android:text="鸭子学车记"
+        android:textSize="32px"
+        android:textColor="@color/gray_text"
+        android:layout_marginBottom="20px"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_recomand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2px"
+        android:layout_toRightOf="@id/iv_book"
+        android:layout_below="@id/tv_book_name" >
+
+        <TextView
+            android:id="@+id/tv_book_recomand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/book_recommend"
+            android:textColor="@color/gray_2"
+            android:textSize="28px" />
+
+        <RatingBar
+            android:id="@+id/rb_star"
+            style="@style/articlelist_item_ratingbar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_book_recomand"
+            android:isIndicator="true"
+            android:rating="2.5" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_book_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_2"
+        android:layout_toRightOf="@id/iv_book"
+        android:layout_below="@id/rl_recomand"
+        android:lines="2"
+        android:text="dfdf你好aaaaddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeedddddddddddd"
+        android:textSize="28px"
+        android:layout_marginTop="23px"
+        android:maxLines="6"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_book"
+        android:textColor="@color/gray_1"
+        android:layout_marginTop="22px"
+        android:textSize="24px"
+        android:text="2016-04-06   18:36"
+        />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/img_comments"
+        android:text="23"
+        android:drawablePadding="10px"
+        android:textSize="24px"
+        android:textColor="@color/gray_1"
+        android:gravity="center"
+        android:layout_below="@id/iv_book"
+        android:layout_alignBaseline="@+id/tv_time"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

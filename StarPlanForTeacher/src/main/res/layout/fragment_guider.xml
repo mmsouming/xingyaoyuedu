@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.shinread.StarPlan.Teacher.ui.fragment.GuideFragment">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_guide"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            />
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="18px"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_gravity="bottom"
+            app:radius="10px"
+            app:pageColor="@color/gray_dan"
+            app:fillColor="@color/login_bg"
+            app:strokeWidth="0px"
+            />
+
+        <Button
+            android:id="@+id/btn_activate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160px"
+            android:layout_marginRight="160px"
+            android:layout_marginBottom="68px"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="@string/activate_card"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/btn_yellow_bg"
+            android:background="@drawable/btn_commit_circle_selector"
+            style="@style/btn_common_nomargin"
+            />
+</FrameLayout>

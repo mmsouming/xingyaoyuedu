@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darker_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_task_background"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_header"
+                android:layout_width="108px"
+                android:layout_height="108px"
+                android:layout_margin="16px"
+                android:src="@drawable/defaul_head"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:layout_toRightOf="@id/iv_header"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="小星星"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="35px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_level_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:drawableLeft="@drawable/img_task_v"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="谷神星"
+                    android:textColor="@color/btn_yellow_bg"
+                    android:textSize="24px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_level_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_nick"
+                android:layout_marginTop="14px"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/iv_header"
+                android:drawableLeft="@drawable/img_task_s"
+                android:drawablePadding="10px"
+                android:text="1920"
+                android:textColor="@color/white"
+                android:textSize="26px"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="184px"
+                android:layout_height="12px"
+                android:layout_below="@id/ll_nick"
+                android:layout_marginLeft="16px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/tv_level_value"
+                android:max="100"
+                android:progress="60"
+                android:progressDrawable="@drawable/progressbar_style" />
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="30px"
+                android:layout_toRightOf="@id/iv_book_ico"
+                android:background="@drawable/btn_commit_circle"
+                android:text="@string/comment_test"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="366px"
+            android:layout_marginTop="50px">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="88px"
+                android:layout_marginRight="88px"
+                android:background="@drawable/vp_border"
+                android:padding="20px" />
+
+            <TextView
+                android:id="@+id/tv_no_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40px"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="暂无作业"/>
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_task_left" />
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="20px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_task_right" />
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_gravity="right"
+            android:layout_marginBottom="12px"
+            android:layout_marginRight="58px"
+            android:layout_marginTop="60px"
+            android:background="@drawable/btn_commit_circle"
+            android:drawableLeft="@drawable/img_task_signin"
+            android:drawablePadding="12px"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="12px"
+            android:text="@string/task_sign_in"
+            android:textColor="@color/white" />
+
+        <!-- 阅读计划 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="442px"
+            android:layout_marginBottom="58px"
+            android:layout_marginLeft="58px"
+            android:layout_marginRight="58px"
+            android:background="@drawable/radiu_white_bg">
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="28px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/task_lend_book_title"
+                        android:textColor="@color/login_bg"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/tv_count_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12px"
+                        android:gravity="center_horizontal"
+                        android:text="2本"
+                        android:textColor="@color/login_bg"
+                        android:textSize="32px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/task_read_days"
+                        android:textColor="@color/login_bg"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/tv_count_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12px"
+                        android:gravity="center_horizontal"
+                        android:text="3天"
+                        android:textColor="@color/login_bg"
+                        android:textSize="32px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/task_complete"
+                        android:textColor="@color/login_bg"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/tv_complete_prograss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12px"
+                        android:gravity="center_horizontal"
+                        android:text="60%"
+                        android:textColor="@color/login_bg"
+                        android:textSize="32px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_plan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_title"
+                android:layout_margin="26px"
+                android:background="@color/gray_dan"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_read_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_plan"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+                <Button
+                    android:id="@+id/btn_read_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70px"
+                    android:layout_marginTop="20px"
+                    android:background="@drawable/btn_register_circle"
+                    android:text="详情"
+                    android:textColor="@android:color/white"
+                    android:textSize="32px" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

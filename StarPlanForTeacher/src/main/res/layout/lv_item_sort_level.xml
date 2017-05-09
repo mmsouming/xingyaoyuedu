@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_level_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/login_bg"
+        android:gravity="center"
+        android:text="@string/edit"
+        android:maxLines="1"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_traspbg_yellow_circle"
+        android:textSize="16sp"
+        android:layout_marginTop="30px"
+        android:layout_below="@id/gv_interst"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        />
+
+</RelativeLayout>

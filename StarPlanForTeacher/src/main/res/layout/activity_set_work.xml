@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userinfo_main"
+    android:orientation="vertical">
+
+    <!--  <include
+          android:id="@+id/student_bar_layout"
+          layout="@layout/nav_bar_back"
+          />-->
+    <RelativeLayout
+        android:id="@+id/student_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/userinfo_main">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:scaleType="center"
+            android:src="@drawable/btn_back_yellow" />
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="标题"
+            android:textColor="@color/bule_2"
+            android:textSize="40px"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="129px"
+            android:layout_height="49px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:background="@drawable/btn_login_circle_selector"
+            android:text="取消"
+            android:textColor="@color/font_color_white"
+            android:textSize="32px" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/work_teme"
+        style="@style/et_txt_work_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_bar_layout"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="22px"
+        android:hint="作业主题"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/publish_time"
+        style="@style/et_txt_work_title"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/work_teme"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="22px"
+        android:hint="发布时间"
+
+        />
+
+    <TextView
+        android:id="@+id/finish_time"
+        style="@style/et_txt_work_title"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/publish_time"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="22px"
+        android:hint="完成时间"
+
+        />
+
+    <EditText
+        android:id="@+id/work_request"
+        style="@style/et_txt_work_title"
+        android:layout_width="match_parent"
+        android:layout_height="314px"
+        android:layout_below="@+id/finish_time"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="22px"
+        android:gravity="top"
+        android:hint="作业要求(200字)"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/photo_relatout"
+        style="@style/et_txt_work_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/work_request"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="22px">
+
+        <TextView
+            android:id="@+id/tv_class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="班级" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_add"
+            android:layout_toRightOf="@+id/tv_class_name"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/pers_photo_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/book_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo_relatout"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="32px"
+        android:text="阅读范围"
+        android:textColor="@color/font_color_black"
+        android:textSize="30px" />
+
+    <GridView
+        android:id="@+id/work_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_tv"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="62px"
+        android:layout_marginTop="30px"
+        android:divider="@null"
+        android:dividerHeight="0px"
+
+        android:horizontalSpacing="40px"
+        android:listSelector="@color/transparent"
+
+        android:numColumns="3"
+        android:scrollbars="none" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_tijiao"
+            style="@style/btn_common_nomargin"
+            android:layout_width="300px"
+            android:layout_height="100px"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.43"
+            android:background="@drawable/btn_commit_circle_selector"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

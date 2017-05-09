@@ -1,0 +1,101 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="rg_btn_style">
+        <item name="android:textSize">@dimen/tab_font_size</item>
+        <item name="android:textColor">@drawable/rb_btn_txt_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="rg_btn_style2">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/bule_2</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/rb_comment_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="FFTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar栏颜色-->
+        <item name="colorPrimary">@color/common_title_background</item>
+        <!--状态栏颜色,这里在5.0一下修改是没有用 的-->
+        <!--<item name="colorPrimaryDark">@color/status_titlebar_background</item>-->
+        <!--标题字体颜色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">true</item>
+        <!--  左边箭头样式-->
+        <!--  <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+        <!-- 溢出菜单图标颜色
+         <item name="colorControlNormal">@android:color/white</item>-->
+    </style>
+
+    <style name="FFTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="FFTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--  checkbox图标样式-->
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/button_style_checkbox</item>
+    </style>
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置是否可滑动 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置是否透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景 -->
+        <item name="android:background">@null</item>
+        <!-- 窗口背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="mytheme" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/back</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+</resources>

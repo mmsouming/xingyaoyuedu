@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_alignParentLeft="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="取 消"
+            android:textSize="18sp"
+            android:textColor="@color/bule_1" />
+        <TextView
+            android:id="@+id/btn_sure"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="确 定"
+            android:textSize="18sp"
+            android:textColor="@color/bule_1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.fancyfamily.primarylibrary.commentlibrary.lib.wheelview.WheelView
+            android:id="@+id/wv_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_weight="1" />
+
+        <com.fancyfamily.primarylibrary.commentlibrary.lib.wheelview.WheelView
+            android:id="@+id/wv_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_weight="1" />
+
+        <com.fancyfamily.primarylibrary.commentlibrary.lib.wheelview.WheelView
+            android:id="@+id/wv_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

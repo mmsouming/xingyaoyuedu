@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="8px"
+    android:paddingBottom="8px"
+    >
+
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="182px"
+        android:layout_height="242px"
+        android:src="@drawable/cc_book_no"
+        android:layout_marginRight="30px"
+        />
+    <TextView
+        android:id="@+id/tv_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鸭子骑车记"
+        android:layout_toRightOf="@id/iv_book"
+        android:textColor="@color/gray_text"
+        />
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_below="@id/tv_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text"
+        android:text="大卫.夏农"
+        android:layout_toRightOf="@id/iv_book"
+        android:textSize="28px"
+        android:layout_marginTop="14px"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_recomand"
+        android:layout_below="@id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12px"
+        android:layout_toRightOf="@id/iv_book"
+        android:textSize="28px"
+        android:layout_marginTop="14px"
+        >
+
+        <TextView
+            android:id="@+id/tv_book_recomand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/book_recommend"
+            android:textColor="@color/gray_text"
+            android:textSize="28px" />
+
+        <RatingBar
+            android:id="@+id/rb_star"
+            style="@style/articlelist_item_ratingbar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_book_recomand"
+            android:isIndicator="true"
+            android:rating="2.5" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_below="@id/rl_recomand"
+        android:lines="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text"
+        android:text="鸭子骑车：这可正式个疯狂的想法！但是有一只鸭子真的办到了！农...................鸭子骑车真是一个疯狂"
+        android:layout_toRightOf="@id/iv_book"
+        android:textSize="28px"
+        android:layout_marginTop="14px"
+        />
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="28px"
+    >
+
+    <TextView
+        android:id="@+id/tv_mine_interst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bule_1"
+        android:text="@string/recomand_me_title"
+        android:textSize="36px"
+        android:layout_marginTop="30px"
+        />
+
+    <com.fancyfamily.primarylibrary.commentlibrary.widget.MeasureGridView
+        android:id="@+id/gv_interst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22px"
+        android:layout_below="@id/tv_mine_interst"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:horizontalSpacing="18px"
+        android:verticalSpacing="6px"
+        android:dividerHeight="0px"
+        android:divider="@null"
+        android:gravity="center"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:textColor="@color/white"
+        android:text="@string/edit"
+        android:background="@drawable/btn_login_circle_selector"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_below="@id/gv_interst"
+        android:layout_alignParentRight="true"
+        />
+
+</com.zhy.autolayout.AutoRelativeLayout>

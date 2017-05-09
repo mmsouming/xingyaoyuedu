@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shinread.StarPlan.Teacher.ui.fragment.UserInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/userinfo_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="488px"
+                android:background="@drawable/img_userinfo_header_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="26px"
+                    android:layout_marginTop="26px"
+                    android:src="@drawable/img_info_setting" />
+
+                <FrameLayout
+                    android:id="@+id/fl_select_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="86px">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_header"
+                        android:layout_width="202px"
+                        android:layout_height="202px"
+                        android:src="@drawable/defaul_head"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                    <ImageView
+                        android:layout_width="58px"
+                        android:layout_height="58px"
+                        android:layout_gravity="bottom|right"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_userinfo_camera" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16px"
+                    android:layout_toRightOf="@id/iv_book_ico"
+                    android:text="星星妈妈"
+                    android:textColor="@color/white"
+                    android:textSize="36px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16px"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="16px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/radiu_white_bg"
+                android:orientation="vertical"
+                android:paddingBottom="16px"
+                android:paddingTop="16px"
+                app:divider="@drawable/line"
+                app:dividerPadding="12dp"
+                app:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/tv_task_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_homework_management"
+                    android:drawablePadding="24px"
+                    android:drawableRight="@drawable/img_userinfo_jump"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="46px"
+                    android:paddingRight="42px"
+                    android:paddingTop="8dp"
+                    android:text="@string/userinfo_task_manager" />
+
+                <TextView
+                    android:id="@+id/tv_class_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_class_management"
+                    android:drawablePadding="24px"
+                    android:drawableRight="@drawable/img_userinfo_jump"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="46px"
+                    android:paddingRight="42px"
+                    android:paddingTop="8dp"
+                    android:text="@string/class_manager" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="46px"
+                    android:paddingRight="42px">
+
+                    <TextView
+                        android:id="@+id/tv_record_lend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/img_check_out_record"
+                        android:drawablePadding="24px"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/record_books" />
+
+                    <TextView
+                        android:id="@+id/tv_record_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="24px"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/img_userinfo_jump"
+                        android:text="尚未激活璀璨卡"
+                        android:textColor="@color/red_1" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_cast_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_notice_management"
+                    android:drawablePadding="24px"
+                    android:drawableRight="@drawable/img_userinfo_jump"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:visibility="gone"
+                    android:paddingLeft="46px"
+                    android:paddingRight="42px"
+                    android:paddingTop="8dp"
+                    android:text="@string/cast_manager" />
+
+                <TextView
+                    android:id="@+id/tv_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/img_manager_collection"
+                    android:drawablePadding="24px"
+                    android:drawableRight="@drawable/img_userinfo_jump"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="46px"
+                    android:paddingRight="42px"
+                    android:paddingTop="8dp"
+                    android:text="@string/collect" />
+                <RelativeLayout
+                    android:id="@+id/rl_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="46px"
+                    android:paddingRight="42px"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_comment_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="24px"
+                        android:drawableRight="@drawable/img_userinfo_jump"
+                        android:text="6"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/tv_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/comments"
+                        android:drawablePadding="24px"
+                        android:gravity="center_vertical"
+                        android:text="@string/comment_back"
+                        android:textColor="@color/gray_2"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="46px"
+                    android:paddingRight="42px"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/img_information"
+                        android:drawablePadding="24px"
+                        android:gravity="center_vertical"
+                        android:text="@string/msg_center" />
+
+                    <TextView
+                        android:id="@+id/tv_msg_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="24px"
+                        android:drawableRight="@drawable/img_userinfo_jump"
+                        android:text="6"
+                        android:textColor="@color/red_1" />
+                </RelativeLayout>
+            </android.support.v7.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

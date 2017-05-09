@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8px"
+    >
+
+    <CheckBox
+    android:id="@+id/cb1"
+    android:layout_width="0px"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:textColor="@drawable/rb_recomand_txt_selector"
+    android:textSize="16sp"
+    android:paddingLeft="12px"
+    android:paddingRight="12px"
+    android:paddingTop="6px"
+    android:paddingBottom="6px"
+    android:button="@null"
+    android:maxLines="1"
+    android:text="@string/recomand"
+    android:layout_centerInParent="true"
+    android:background="@drawable/cb_recomand_subject_selector"
+    android:layout_marginLeft="22px"
+        android:layout_marginRight="22px"
+        android:gravity="center"
+    />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/rb_recomand_txt_selector"
+        android:textSize="16sp"
+        android:paddingLeft="12px"
+        android:paddingRight="12px"
+        android:paddingTop="6px"
+        android:paddingBottom="6px"
+        android:button="@null"
+        android:maxLines="1"
+        android:text="@string/recomand"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cb_recomand_subject_selector"
+        android:gravity="center"
+        />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/rb_recomand_txt_selector"
+        android:textSize="16sp"
+        android:paddingLeft="12px"
+        android:paddingRight="12px"
+        android:paddingTop="6px"
+        android:paddingBottom="6px"
+        android:button="@null"
+        android:maxLines="1"
+        android:text="@string/recomand"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cb_recomand_subject_selector"
+        android:layout_marginLeft="22px"
+        android:layout_marginRight="22px"
+        android:gravity="center"
+        />
+</com.zhy.autolayout.AutoLinearLayout>

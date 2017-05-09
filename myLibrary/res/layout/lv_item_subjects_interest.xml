@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <CheckBox
+        android:id="@+id/rb_recomand"
+        android:layout_width="match_parent"
+        android:layout_height="68px"
+        android:gravity="center"
+        android:textColor="@drawable/rb_recomand_txt_selector"
+        android:paddingLeft="12px"
+        android:paddingRight="12px"
+        android:paddingTop="6px"
+        android:paddingBottom="6px"
+        android:button="@null"
+        android:textSize="15sp"
+        android:lines="1"
+        android:layout_marginTop="12dp"
+        android:text="@string/recomand"
+        android:layout_centerInParent="true"
+        android:background="@drawable/cb_recomand_subject_selector"
+        />
+</com.zhy.autolayout.AutoRelativeLayout>

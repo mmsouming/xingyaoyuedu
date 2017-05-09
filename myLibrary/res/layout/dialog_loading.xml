@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--<com.fancyfamily.primarylibrary.commentlibrary.widget.LoaddingImageView-->
+        <!--android:id="@+id/liv_loadding"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20px"-->
+        <!--android:src="@drawable/loading"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/liv_loadding"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicator="LineScaleParty"
+        />
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liv_loadding"
+        android:text="@string/loading_txt"
+        android:textColor="@color/gray_text"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="60px"
+        android:layout_centerHorizontal="true"
+
+        />
+</RelativeLayout>

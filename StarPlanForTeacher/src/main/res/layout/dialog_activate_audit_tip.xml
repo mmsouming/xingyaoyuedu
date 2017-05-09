@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/radiu_bg"
+        android:paddingTop="40px"
+        android:paddingLeft="168px"
+        android:paddingRight="168px"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_audit_dialog_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_dialog_icon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activate_audit_tip"
+            android:layout_marginTop="40px"
+            android:textSize="36px"
+            android:textColor="@color/login_bg"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="@dimen/padding_content"
+            android:text="@string/sure"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_login_circle_selector"
+            style="@style/btn_common_nomargin"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

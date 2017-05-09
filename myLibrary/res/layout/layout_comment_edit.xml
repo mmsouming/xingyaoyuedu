@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/font_color_white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/book_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/gray_text"
+            android:background="@drawable/shape_editbg"
+            android:hint="分享所有心得"
+            android:inputType="textMultiLine"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/zan"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_btn_grey_boder"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#949A9A"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        layout="@layout/line" />
+
+</LinearLayout>

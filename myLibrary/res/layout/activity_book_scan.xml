@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fancyfamily.primarylibrary.commentlibrary.ui.book.BookScanActivity">
+
+    <fragment
+        android:id="@+id/scanner_fragment"
+        android:name="com.fancyfamily.primarylibrary.commentlibrary.ui.book.fragment.SimpleScannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</RelativeLayout>

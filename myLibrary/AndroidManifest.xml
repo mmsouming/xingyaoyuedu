@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fancyfamily.primarylibrary"
+    android:versionCode="65"
+    android:versionName="2.4.1">
+
+
+    <uses-sdk android:minSdkVersion="4" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/FFTheme">
+
+        <!-- 设计稿的分辨率 -->
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+
+        <activity
+            android:name=".commentlibrary.ui.comment.PicBrowserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commentlibrary.ui.comment.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commentlibrary.ui.comment.CommentPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commentlibrary.ui.book.BookDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commentlibrary.ui.book.SearchBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commentlibrary.lib.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".commentlibrary.ui.book.BookScanActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".commentlibrary.ui.WebActivity"></activity>
+
+        <activity
+            android:name=".commentlibrary.ui.book.LendRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".commentlibrary.ui.book.CollectActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".commentlibrary.ui.comment.CommentListActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+Trying to add new property 'svn:ignore'
+but the property already exists.
+<<<<<<< (local property value)
+*.gradle
+*.idea
+.idea
+||||||| (incoming 'changed from' value)
+=======
+.idea
+.gradle
+build
+>>>>>>> (incoming 'changed to' value)

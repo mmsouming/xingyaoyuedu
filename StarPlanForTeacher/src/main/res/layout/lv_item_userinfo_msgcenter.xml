@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="24px"
+    >
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_book"
+        android:text="作业"
+        android:textSize="36px"
+        android:layout_marginTop="15px"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_msg_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_2"
+        android:layout_below="@id/tv_msg"
+        android:text="老师布置了作业《第五周作业》"
+        android:textSize="30px"
+
+        android:layout_marginTop="22px"
+        android:maxLines="6"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_msg_detail"
+        android:textColor="@color/gray_1"
+        android:layout_marginTop="26px"
+        android:textSize="24px"
+        android:text="2016-04-06   18:36"
+        />
+
+</RelativeLayout>

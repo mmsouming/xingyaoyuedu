@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/radiu_bg"
+        android:layout_marginTop="26px"
+        android:layout_marginBottom="25px"
+        android:padding="25px"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/login_bg"
+            android:text="@string/sort_level"
+            android:textSize="36px"
+            />
+        <com.fancyfamily.primarylibrary.commentlibrary.widget.MeasureGridView
+            android:id="@+id/gv_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:dividerHeight="0px"
+            android:horizontalSpacing="13px"
+            android:divider="@null"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

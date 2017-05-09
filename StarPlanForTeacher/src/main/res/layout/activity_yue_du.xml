@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userinfo_main"
+  >
+<!--<include android:id="@+id/yuedu_bar_back"
+   layout="@layout/nav_bar_back"
+    />
+-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/yuedu_bar_layout"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/yuedu_btn_back"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:scaleType="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:src="@drawable/btn_back_yellow"
+            />
+        <TextView
+            android:id="@+id/yuedu_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="阅读范围"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/bule_2"
+            android:textSize="40px" />
+        <Button
+            android:id="@+id/yuedu_btn_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sousuo"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/relyout_listview"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="14px"
+        android:layout_below="@+id/yuedu_bar_layout"
+        android:layout_height="94px">
+
+
+
+        <RadioGroup
+            android:id="@+id/yuedu_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/btn_select_interst"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@drawable/rb_recomand_txt_selector"
+                android:button="@null"
+                android:textStyle="bold"
+         android:padding="8px"
+                android:layout_marginRight="50px"
+                android:layout_marginLeft="65px"
+               android:background="@drawable/btn_yuedu_selector"
+                android:gravity="center"
+                android:text="兴趣选择"
+                android:textSize="30px" />
+
+            <RadioButton
+                android:id="@+id/btn_select_shudan"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@drawable/rb_recomand_txt_selector"
+                android:padding="8px"
+                android:button="@null"
+                android:checked="true"
+                android:layout_marginRight="65px"
+                android:textStyle="bold"
+                android:background="@drawable/btn_yuedu_selector"
+                android:gravity="center"
+                android:text="从书单中选择"
+
+                android:textSize="30px" />
+        </RadioGroup>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/work_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="15px"
+        android:background="@drawable/radiu_white_bg"
+        android:layout_below="@+id/relyout_listview"
+        android:layout_marginTop="26px"
+        />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:alpha="0.8"
+        android:layout_height="120px">
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="358px"
+            android:layout_height="78px"
+            android:layout_weight="0.43"
+
+            android:textSize="36px"
+             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="确定"
+            android:padding="0px"
+            android:layout_marginBottom="20px"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_yuedu_true_circle"
+            style="@style/btn_common_nomargin"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

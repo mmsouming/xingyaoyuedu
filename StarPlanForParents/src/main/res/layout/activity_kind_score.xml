@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/login_bg"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.fancyfamily.primarylibrary.commentlibrary.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:padding="26px"
+            app:title_left_icon_src="@drawable/img_register_back"
+            app:title_text="@string/kind_info"
+            app:title_right_text=""
+            app:title_right_visible="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/btn_rule"
+            android:layout_alignEnd="@+id/btn_rule" />
+        <Button
+            android:id="@+id/btn_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:text="@string/rule"
+            android:paddingLeft="8px"
+            android:paddingRight="8px"
+            android:layout_marginRight="8px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/btn_login_txt"
+            android:background="@drawable/btn_login_circle_selector"
+            />
+    </RelativeLayout>
+
+    <include
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="18px"
+        android:layout_marginBottom="40px"
+        layout="@layout/cc_layout_pull_list"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/my_content_view"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="0" />
+    </android.support.v4.app.FragmentTabHost>
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_bg"
+        android:orientation="horizontal" >
+
+        <com.fancyfamily.primarylibrary.commentlibrary.widget.CustomRadioButton
+            android:id="@+id/rb_guid"
+            style="@style/rg_btn_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab_guider"
+            android:drawableTop="@drawable/rb_guide_btn_selector"/>
+
+        <com.fancyfamily.primarylibrary.commentlibrary.widget.CustomRadioButton
+            android:id="@+id/rb_library"
+            style="@style/rg_btn_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab_library"
+            android:drawableTop="@drawable/rb_library_btn_selector"/>
+
+        <com.fancyfamily.primarylibrary.commentlibrary.widget.CustomRadioButton
+            android:id="@+id/rb_user_center"
+            style="@style/rg_btn_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab_user"
+            android:drawableTop="@drawable/rb_usercenter_btn_selector" />
+    </RadioGroup>
+</LinearLayout>

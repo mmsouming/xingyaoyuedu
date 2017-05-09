@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dip"
+    android:padding="8dp"
+    android:layout_marginRight="5dip"
+    android:background="@drawable/shape_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/cc_txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="30dip"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="请选择你的宝宝"
+        android:textColor="@color/font_color_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:text="注意"
+        android:visibility="gone"
+        android:textColor="@color/font_color_dark"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_green"
+            android:text="确 定"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/font_color_white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_grey"
+            android:text="取 消"
+            android:textColor="#8A8A8A"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

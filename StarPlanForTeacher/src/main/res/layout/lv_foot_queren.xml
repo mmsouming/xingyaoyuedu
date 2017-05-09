@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/btn_setclass"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="44px"
+        android:layout_marginRight="44px"
+        android:background="@drawable/shape_btn_bule_boder"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14px"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置班级"
+            android:textColor="@color/bule_1"
+            android:textSize="30px" />
+    </LinearLayout>
+</LinearLayout>

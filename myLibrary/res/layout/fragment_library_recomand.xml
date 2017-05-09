@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/swipyrefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srl_direction="top">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:background="@drawable/radiu_top_bg"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/gv_item_header_recomand_interst" />
+
+
+                    <com.fancyfamily.primarylibrary.commentlibrary.widget.MeasureGridView
+                        android:id="@+id/grid_recomend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="fill"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+    </RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

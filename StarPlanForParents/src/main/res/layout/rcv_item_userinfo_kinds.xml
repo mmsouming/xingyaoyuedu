@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="190px"
+        android:layout_height="188px"
+        android:background="@color/bule_1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="26px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_header"
+                android:layout_width="110px"
+                android:layout_height="110px"
+                android:src="@drawable/defaul_head"
+                app:civ_border_color="@color/btn_yellow_bg"
+                app:civ_border_width="6px" />
+
+            <ImageView
+                android:id="@+id/img_certified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_header"
+                android:layout_alignBottom="@+id/iv_header"
+                android:src="@drawable/unauthorized" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_kind_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:text="黄小星"
+            android:textColor="@color/btn_yellow_bg"
+            android:textSize="28px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8px"
+        android:src="@drawable/img_arrows" />
+</com.zhy.autolayout.AutoLinearLayout>

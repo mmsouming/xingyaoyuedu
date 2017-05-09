@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.fancyfamily.primarylibrary.commentlibrary.widget.TitleBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:padding="26px"
+            app:title_left_icon_src="@drawable/img_register_back"
+            app:title_text="@string/commit_task"
+            app:title_right_text=""
+            app:title_right_visible="true"
+            />
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:text="@string/send"
+            android:paddingLeft="8px"
+            android:paddingRight="8px"
+            android:layout_marginRight="8px"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_blue_circle"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/line_heng"
+        />
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:layout_marginTop="32px"
+        layout="@layout/lv_item_task" />
+
+    <EditText
+        android:id="@+id/et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:layout_marginTop="32px"
+        android:textColor="@color/gray_text"
+        android:textColorHint="@color/gray_text"
+        android:hint="@string/comment_tip_parents"
+        />
+
+
+    <GridView
+        android:id="@+id/gv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="98px"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:horizontalSpacing="10px"
+        android:verticalSpacing="10px"
+        android:dividerHeight="0px"
+        android:divider="@null"
+        android:gravity="center"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        />
+</LinearLayout>

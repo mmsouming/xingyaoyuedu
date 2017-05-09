@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_recomand"
+        android:layout_width="182px"
+        android:layout_height="242px"
+        android:layout_marginLeft="22px"
+        android:layout_marginRight="22px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cc_book_no"
+        />
+</LinearLayout>

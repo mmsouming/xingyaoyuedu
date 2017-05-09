@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/radiu_white_bg"
+    android:padding="16px"
+    >
+
+    <TextView
+        android:id="@+id/tv_task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/login_bg"
+        android:text="太空主题阅读作业"
+        android:textStyle="bold"
+        android:textSize="36px"
+        />
+
+    <TextView
+        android:id="@+id/tv_task_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_task_title"
+        android:textColor="@color/gray_text"
+        android:text="一年级 1 班"
+        android:textSize="30px"
+        android:layout_marginTop="10px"
+        />
+
+    <TextView
+        android:id="@+id/tv_task_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text"
+        android:text="3月20日 12：00发布"
+        android:layout_marginTop="16px"
+        android:textSize="30px"
+        android:drawableLeft="@drawable/img_time"
+        android:drawablePadding="6px"
+        android:layout_below="@id/tv_task_level"
+        />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="68px"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="@string/ordering"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_blue_commit"
+        android:layout_below="@id/tv_task_level"
+        android:layout_alignParentRight="true"
+        />
+</com.zhy.autolayout.AutoRelativeLayout>

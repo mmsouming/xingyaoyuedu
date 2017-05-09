@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    >
+
+    <com.fancyfamily.primarylibrary.commentlibrary.widget.TitleBar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:padding="26px"
+        app:title_left_icon_src="@drawable/img_register_back"
+        app:title_text="评论回复"
+        app:title_right_text=""
+        app:title_right_visible="true"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rb_replys"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/rb_orders_selector"
+            android:padding="12px"
+            android:layout_marginRight="50px"
+            android:layout_marginLeft="65px"
+            android:button="@null"
+            android:text="@string/replys_receiver"
+            android:gravity="center"
+            android:background="@drawable/check_orders_selector"
+            />
+        <RadioButton
+            android:id="@+id/rb_comments"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/rb_orders_selector"
+            android:padding="12px"
+            android:layout_marginRight="65px"
+            android:button="@null"
+            android:text="@string/my_comment"
+            android:gravity="center"
+            android:checked="true"
+            android:background="@drawable/check_orders_selector"
+            />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_comments"
+        android:layout_margin="20px"
+        android:background="@drawable/radiu_white_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
